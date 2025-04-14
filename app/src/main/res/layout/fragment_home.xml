@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:padding="16dp"
+     android:orientation="vertical">
+
+        <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    
+    <com.google.android.material.card.MaterialCardView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_margin="8dp"
+         app:cardCornerRadius="16dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="16dp"
+             android:orientation="vertical">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="8dp"
+                 android:textSize="24sp"
+                 android:textColor="?attr/colorOnSurface"
+                 android:id="@+id/mainTitle"
+                 android:text="启动 Blaze Launcher"
+                 android:textStyle="bold" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="16dp"
+                 android:textSize="16sp"
+                 android:textColor="?attr/colorOnSurfaceVariant"
+                 android:id="@+id/subTitle"
+                 android:text="在任何支持的设备上直接启动" />
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 app:backgroundTint="?attr/colorPrimary"
+                 android:textSize="16sp"
+                 
+                 android:layout_marginTop="16dp"
+                 android:id="@+id/startBLZ"
+                 android:text="启动" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+        android:id="@+id/minecraftCard"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            
+            android:orientation="vertical">
+
+            <!-- 圆形指示器 -->
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                
+            >
+            <View
+                android:id="@+id/install_status_indicator"
+                android:layout_height="24dp"
+                android:layout_width="24dp"
+                
+                android:background="@drawable/circle_indicator_not_installed" />
+
+            <!-- 主标题 -->
+            <TextView
+                android:id="@+id/minecraftTitle"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="24sp"
+                    
+                android:textColor="?attr/colorOnSurface"
+                android:text="Minecraft 客户端"
+                android:textStyle="bold"
+                />
+</LinearLayout>
+            <!-- 副标题 -->
+            
+            <TextView
+                android:id="@+id/minecraftSubTitle"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:text="未安装" />
+                    
+
+
+        </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+        </LinearLayout>

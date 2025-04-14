@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 帮助内容 -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:layout_marginBottom="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+            
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注意事项"
+                android:textSize="20sp"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:layout_gravity="start" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="付费版支持功能 刷物，附魔，伪锁血，模式切换 (创造/生存/冒险)，手部动画，无限光环，自动环绕，名称伪装，自动金苹果/图腾，更好的绕过，多重发包，透视，爬墙，无摔落伤害，自动破坏，无减速"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="如果无法注册请使用我下文提供的加速器，Blaze Launcher 无法被 Minecraft 的游戏加速器加速! 只能使用全局的 VPN，如果你不懂的话有偿进群问群主，注册账号一件套价格一般为 5 块钱。"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:layout_marginTop="8dp" />
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 app:backgroundTint="?attr/colorPrimary"
+                 android:textSize="16sp"
+                 android:layout_marginTop="8dp"
+                 android:id="@+id/video1"
+                 android:text="点我查看教程视频" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blaze Launcher 使用指南"
+                android:textSize="18sp"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="1. 基本涵盖了所有问题，最下方有功能翻译"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:layout_marginTop="8dp" />
+
+  
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. 如果在启动时提示 Please enable Read...，怎么办？"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请点击主界面的 启动 Blaze Launcher 按钮。"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. 如果提示 Unsupport version: xxxxx，怎么办？"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请点击下载栏的下载 1.21.51.02 按钮，并在浏览器中下载安装包。"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. 如果注册时提示 Error: 8964 China user... ，怎么办？"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 app:backgroundTint="?attr/colorPrimary"
+                 android:textSize="16sp"
+                 android:layout_marginTop="16dp"
+                 android:id="@+id/vpn"
+                 android:text="下载免费的 VPN" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下载并安装 VPN 后，启用加速，然后重新尝试，如果不会请进群有偿提供注册服务。"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:layout_marginTop="8dp" />
+
+           
+			<TextView
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:layout_height="wrap_content"
+				android:text="5. 现在有没有配置保存功能?"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="没有。付费版也没有。"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:text="6. 怎么买付费版?"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="现在买不了，你有需求可以来群里问。当然太傻逼了我们不会理睬你。"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="7. 为什么没有中文?"
+				android:textStyle="bold"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="这是老外(划掉 开发的外挂，因此别指望它有中文了"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:text="8. 我拉的杀戮为什么闪退没了"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="因为现在没有自动保存功能，同时有些功能不稳定会闪退，可以抄别人的配置不要自己做配置，如果你不懂什么是配置那你还是别玩了"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="9. 有的功能怎么用不了"
+				android:textStyle="bold"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="要么是没有开发好，要么就是这个功能是付费版独有的你现在用不了"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:text="10. 你这个安装包是付费版的还是免费版的"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="还记得你刚开始注册的那个账号吗？你刚注册的账号是免费版的，只有代理给你升级了账号你的客户端才会变成付费版，所以不是根据安装包的类型改变付费版和免费版的"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:text="11. 有没有破解版?支持网易吗?"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="没有"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:layout_height="wrap_content"
+				android:text="12. 为什么开杀戮有一些时候会空刀，还会闪退呀？用快捷开启也还会闪退，怎么办？"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="因为你杀戮配置拉的太大了，要么就是你根本不会拉配置"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:layout_height="wrap_content"
+				android:text="13. 能不能和 MuCuteClient 一起开"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="可以，但是不会用别找我"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="14. 能不能和 Toolbox 一起开"
+				android:textStyle="bold"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="不能"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:text="15. 能不能和 Apollon/Toybox 一起开"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="不能"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:layout_height="wrap_content"
+				android:text="16. 为什么登录时提示 Please go to the xxxx?"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="如果你是在这个安装器里安装的还提示这个那么就是 Blaze Launcher 更新了，等弹出来公告提示你更新安装器，不要催，如果不是请在安装器里再安装一遍"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:layout_height="wrap_content"
+				android:text="17. 为什么开了VPN进不去，不开VPN闪退"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="换移动数据，换网络，当然也有可能是 Blaze Launcher 服务器炸了，然后检查一遍有没有正确安装 Minecraft"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:textStyle="bold"
+				android:layout_height="wrap_content"
+				android:text="18. 能不能和共存版的 Minecraft 一起开，我会自己用 MT 管理器改代码"
+				android:layout_marginTop="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="不能"/>
+
+			<ScrollView
+				android:layout_marginTop="30dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<ImageView
+						android:id="@+id/longImage"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:scaleType="fitCenter"
+						android:adjustViewBounds="true"
+						android:src="@drawable/jc"/>
+
+				</LinearLayout>
+        
+    </ScrollView>
+        </LinearLayout>
+        </ScrollView>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

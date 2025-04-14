@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:padding="16dp"
+     android:orientation="vertical"
+     tools:context=".ui.about.AboutFragment">
+
+    <ScrollView
+         android:layout_height="match_parent"
+         android:layout_width="match_parent">
+
+        <LinearLayout
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="16dp"
+                 app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:gravity="center_horizontal"
+                     android:padding="16dp"
+                     android:orientation="vertical">
+
+                    <ImageView
+                         android:layout_height="64dp"
+                         android:layout_width="64dp"
+                         android:src="@drawable/icon"
+                         android:id="@+id/app_icon" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:textSize="20sp"
+                         android:layout_marginTop="8dp"
+                         android:id="@+id/app_name"
+                         android:text="BLZLauncher"
+                         android:textStyle="bold" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:textSize="14sp"
+                         android:layout_marginTop="4dp"
+                         android:id="@+id/app_version"
+                         android:text="Version 2.1.0" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="16dp"
+                 app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:gravity="left"
+                     android:padding="16dp"
+                     android:orientation="vertical">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:layout_marginBottom="8dp"
+                         android:textSize="24sp"
+                         android:textColor="?attr/colorOnSurface"
+                         android:text="Release 2.1.0 更新日志"
+                         android:textStyle="bold" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:textSize="16sp"
+                         android:textColor="?attr/colorOnSurfaceVariant"
+                         android:textStyle="bold"
+                         android:text="1. 界面优化" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:textSize="16sp"
+                         android:paddingLeft="8dp"
+                         android:text="- 感谢 由风11 的建议"
+                         android:layout_gravity="left" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:textSize="16sp"
+                         android:text="2. 安装状态检测修复"
+                         android:layout_gravity="left"
+                         android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="16dp"
+                 app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:padding="16dp"
+                     android:orientation="vertical">
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:layout_marginBottom="8dp"
+                         android:gravity="center"
+                         android:textSize="16sp"
+                         android:textColor="?attr/colorPrimary"
+                         android:id="@+id/phoen1x_website"
+                         android:text="Phoen1x 的小窝" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:layout_marginBottom="8dp"
+                         android:gravity="center"
+                         android:textSize="16sp"
+                         android:textColor="?attr/colorPrimary"
+                         android:id="@+id/minecraft_group"
+                         android:text="Phoen1x 的备用群" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="match_parent"
+                         android:gravity="center"
+                         android:textSize="16sp"
+                         android:textColor="?attr/colorPrimary"
+                         android:id="@+id/bilibili_account"
+                         android:text="作者的哔哩哔哩账号" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:layout_marginBottom="16dp"
+                 app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                     android:layout_height="wrap_content"
+                     android:layout_width="match_parent"
+                     android:gravity="center"
+                     android:padding="16dp"
+                     android:orientation="vertical">
+
+                    <ImageView
+                         android:layout_height="128dp"
+                         android:layout_width="128dp"
+                         android:src="@drawable/ineedmoney" />
+
+                    <TextView
+                         android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                         android:layout_width="wrap_content"
+                         android:textSize="16sp"
+                         android:text="我很可怜 我需要钱"
+                         android:layout_gravity="center" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:padding="16dp"
+     android:orientation="vertical">
+
+        <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    
+    <com.google.android.material.card.MaterialCardView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginBottom="16dp"
+         app:cardCornerRadius="16dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="16dp"
+             android:orientation="vertical">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="8dp"
+                 android:textSize="20sp"
+                 android:textColor="?attr/colorOnSurface"
+                 android:id="@+id/install_status_title"
+                 android:text="安装状态"
+                 android:textStyle="bold"
+                 android:layout_gravity="start" />
+  
+
+            <LinearLayout
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent"
+                 android:gravity="center_vertical"
+                 android:orientation="horizontal">
+
+                <View
+                     android:layout_height="12dp"
+                     android:layout_width="12dp"
+                     android:layout_marginEnd="8dp"
+                     android:background="@drawable/circle_indicator"
+                     android:id="@+id/install_status_indicator" />
+
+                <TextView
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:textSize="16sp"
+                     android:textColor="?attr/colorOnSurfaceVariant"
+                     android:id="@+id/install_status_text"
+                     android:text="未安装" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         
+         app:cardCornerRadius="16dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="16dp"
+             android:orientation="vertical">
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="8dp"
+                 android:textSize="20sp"
+                 android:textColor="?attr/colorOnSurface"
+                 android:id="@+id/main_title"
+                 android:text="安装 Blaze Launcher"
+                 android:textStyle="bold"
+                 android:layout_gravity="start" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="16dp"
+                 android:textSize="16sp"
+                 android:textColor="?attr/colorOnSurfaceVariant"
+                 android:id="@+id/sub_title"
+                 android:text="点击按钮开始安装"
+                 android:layout_gravity="start" />
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 app:backgroundTint="?attr/colorPrimary"
+                 android:textSize="16sp"
+                 
+                 android:layout_marginTop="16dp"
+                 android:id="@+id/installButton"
+                 android:text="安装"
+                 android:layout_gravity="center_horizontal" />
+            
+                <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 app:backgroundTint="?attr/colorPrimary"
+                 android:textSize="16sp"
+                 android:layout_marginLeft="8dp"
+                 android:layout_marginTop="16dp"
+                 android:id="@+id/refreshStatusButton"
+                 android:text="刷新状态"
+                 android:layout_gravity="center_horizontal" />
+
+            </LinearLayout>
+    
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+      <com.google.android.material.card.MaterialCardView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+         app:cardCornerRadius="16dp">
+
+        <LinearLayout
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:padding="16dp"
+             android:orientation="vertical">
+    
+              <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="8dp"
+                 android:textSize="20sp"
+                 android:textColor="?attr/colorOnSurface"
+                 android:id="@+id/dl_m"
+                 android:text="下载 Minecraft"
+                 android:textStyle="bold"
+                 android:layout_gravity="start" />
+
+            <TextView
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:layout_marginBottom="16dp"
+                 android:textSize="16sp"
+                 android:textColor="?attr/colorOnSurfaceVariant"
+                 android:id="@+id/dl_s"
+                 android:text="点击按钮前往下载适配端"
+                 android:layout_gravity="start" />
+
+                      <com.google.android.material.button.MaterialButton
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 app:backgroundTint="?attr/colorPrimary"
+                 android:textSize="16sp"
+                 
+                 android:layout_marginTop="16dp"
+                 android:id="@+id/dlmc"
+                 android:text="下载 1.21.51.02"
+                 android:layout_gravity="start" />
+            
+            
+    </LinearLayout>
+    
+    </com.google.android.material.card.MaterialCardView>
+    
+    </LinearLayout>
+    
+    </ScrollView>
+    
+</LinearLayout>
