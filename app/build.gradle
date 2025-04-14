@@ -20,16 +20,10 @@ android {
 
     signingConfigs {
         release {
-            if (file("signing.properties").exists()) {
-                Properties properties = new Properties()
-                properties.load(file("signing.properties").newDataInputStream())
-                storeFile file(properties['storeFile'])
-                storePassword properties['storePassword']
-                keyAlias properties['keyAlias']
-                keyPassword properties['keyPassword']
-            } else {
-                throw new GradleException("signing.properties file not found.")
-            }
+            storeFile file("blzinstaller.keystore")
+            storePassword "blzinstaller"
+            keyAlias "blzinstaller"
+            keyPassword "blzinstaller"
         }
     }
 
