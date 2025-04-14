@@ -24,10 +24,10 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Download and decode keystore file
+    - name: Download keystore file
       run: |
-        echo "${{ secrets.KEYSTORE_FILE }}" | base64 --decode > keystore.keystore
-        echo "Keystore file downloaded and decoded."
+        echo "${{ secrets.KEYSTORE_FILE }}" > keystore.keystore
+        echo "Keystore file downloaded."
 
     - name: Create signing properties
       run: |
