@@ -24,23 +24,12 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Download keystore file
+    - name: Set environment variables for signing
       run: |
-        echo "${{ secrets.KEYSTORE_FILE }}" > keystore.keystore
-        echo "Keystore file downloaded."
-
-    - name: Create signing properties
-      run: |
-        echo "storeFile=$(pwd)/keystore.keystore" > signing.properties
-        echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" >> signing.properties
-        echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> signing.properties
-        echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> signing.properties
-        echo "signing.properties file created."
-
-    - name: Verify keystore and signing properties
-      run: |
-        ls -l keystore.keystore
-        cat signing.properties
+        echo "KEYSTORE_FILE=${{ secrets.KEYSTORE_FILE }}" >> $GITHUB_ENV
+        echo "KEYSTORE_PASSWORD=${{ secrets.KEYSTORE_PASSWORD }}" >> $GITHUB_ENV
+        echo "KEY_ALIAS=${{ secrets.KEY_ALIAS }}" >> $GITHUB_ENV
+        echo "KEY_PASSWORD=${{ secrets.KEY_PASSWORD }}" >> $GITHUB_ENV
 
     - name: Build Release
       run: ./gradlew assembleRelease
@@ -54,7 +43,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ github.run_number }}  # 使用运行编号作为标签
+        tag_name: ${{ github.run_number }}
         release_name: Release ${{ github.run_number }}
         draft: false
         prerelease: false
