@@ -27,6 +27,8 @@ android {
                 storePassword properties['storePassword']
                 keyAlias properties['keyAlias']
                 keyPassword properties['keyPassword']
+            } else {
+                throw new GradleException("signing.properties file not found.")
             }
         }
     }
